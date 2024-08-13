@@ -28,7 +28,7 @@ if(contactName.value === '' || contactEmail.value === '' || contactProject.value
       // Remove message after three seconds
       setTimeout(() => {
         contactMessage.textContent = ''
-      }, 5000);
+      }, 2000);
 
     }, (error) =>{
       alert('OOPS! SOMETHING HAS FAILED...', error)
@@ -66,4 +66,4 @@ function changeWord() {
 }
 
 // Change word every 2 seconds (2000ms)
-setInterval(changeWord, 2000);
+setInterval(changeWord, 1900);
