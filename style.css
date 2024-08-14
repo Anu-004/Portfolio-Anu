@@ -255,8 +255,8 @@ font-weight: bold;
 .project:hover{
   /* background:linear-gradient(to right,#f271217f, #f271217f, rgba(1, 1, 72, 0.525), rgba(1, 1, 72, 0.525)); 
   #f2712168,*/
-
-background:linear-gradient(to right, #f2712168, rgba(1, 1, 72, 0.459));
+background-color:grey ;
+/* background:linear-gradient(to right, #f2712168, rgba(1, 1, 72, 0.459)); */
 box-shadow: 3px 12px 5px 5px rgba(1, 21, 58, 0.975);
 border:none;
 border-radius: 5px;
