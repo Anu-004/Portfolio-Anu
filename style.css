@@ -246,7 +246,9 @@ body {
   display: block;
   margin-bottom: 10px;
   color: #e0e0e0;
+  font-size: 1.1rem;
 }
+/* input boxes */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -256,8 +258,9 @@ body {
   border: none;
   outline: none;
   /* background: rgba(255, 255, 255, 0.715); */
-  background: rgba(255, 255, 255, 0.486);
-  /* color: #ebfbfb; */
+  background: rgba(255, 255, 255, 0.557);
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
 }
 .contact-form button {
   width: 100%;
@@ -277,6 +280,7 @@ body {
 textarea {
   resize: none;
 }
+
 /* Status color */
 .color-red {
   color: hsl(4, 71%, 50%);
