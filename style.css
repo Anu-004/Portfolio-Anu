@@ -99,12 +99,12 @@ body {
   font-size: 1.8rem;
   font-weight: 900;
   letter-spacing: 2.5px;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  /* margin-top: 0.5em; */
+  /* margin-bottom: 0.5em; */
   opacity: 0;
   /* animation: fade-in 0.5s ease-in-out; */
   color: rgb(140, 222, 252);
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
 }
 
 /* Icon github & linkedIn */
@@ -125,6 +125,9 @@ body {
   color: rgba(240, 248, 255, 0.863);
 }
 /*Resume */
+.btn a{
+  color: #262626;
+}
 .btn {
   background-color: rgba(232, 232, 232, 0.877);
   font-weight: 600;
@@ -143,29 +146,11 @@ body {
 /* Education */
 .education {
   width: 28%;
-  row-gap: 1em;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Timeline Line */
-/* .timeline::before {
-  content: "";
-  position: absolute;
-  left: 1%;
-  top: 0;
-  width: 2.5%;
-  height: 100%;
-  border-radius: 50px;
-  background-color: rgba(245, 245, 245, 0.53);
-  background: linear-gradient(rgb(139, 139, 141), rgb(91, 174, 190));
-} */
-
 .timeline-title {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* align-items: center;
-  justify-content: center; */
   font-weight: bold;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
@@ -174,9 +159,11 @@ body {
 
 .timeline-loc {
   font-size: 1.1rem;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 2em;
   line-height: 1.5;
 }
+
+/* Project */
 .prj {
   display: grid;
   grid-template-areas: "b1 b2 b3";
@@ -200,6 +187,7 @@ body {
   background: linear-gradient(to left, #04557d62, rgba(255, 255, 255, 0.192));
   box-shadow: 3px 12px 5px 5px rgba(1, 20, 52, 0.751);
   border-radius: 5px;
+  /* box-shadow: 3px 12px 5px 5px rgba(1, 18, 45, 0.63); */
   padding: 25px;
   font-size: 1.1rem;
   font-weight: bold;
@@ -210,7 +198,6 @@ body {
   /* box-shadow: 3px 12px 5px 5px rgba(1, 21, 58, 0.975); */
   border: none;
   border-radius: 5px;
-  /* color: rgb(255, 255, 255); */
   color: black;
 }
 
@@ -225,8 +212,6 @@ body {
   color: #262626;
   width: 50%;
   min-width: 100%;
-  /* color: white;
-  background-color: #6F00FF; */
 }
 
 .link:hover {
@@ -246,13 +231,13 @@ body {
 }
 .contact-form {
   /* background: rgba(255, 255, 255, 0.1); */
-  background-color: rgba(245, 245, 245, 0.146);
+  background-color: rgba(245, 245, 245, 0.039);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.208);
   width: 300px;
   max-width: 100%;
   color: #fff;
@@ -260,7 +245,7 @@ body {
 .contact-form label {
   display: block;
   margin-bottom: 10px;
-  color: #fff;
+  color: #e0e0e0;
 }
 .contact-form input,
 .contact-form textarea {
@@ -270,8 +255,8 @@ body {
   border-radius: 5px;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.715);
-  /* background: rgba(255, 255, 255, 0.2); */
+  /* background: rgba(255, 255, 255, 0.715); */
+  background: rgba(255, 255, 255, 0.486);
   /* color: #ebfbfb; */
 }
 .contact-form button {
