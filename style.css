@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  /* margin: 0; */
 }
 html {
   scroll-behavior: smooth;
@@ -10,42 +9,56 @@ html {
 /* Header glass morphism blur */
 header {
   position: fixed;
-  background-color: #bfd7e57e;
-  color: #242124;
-  width: 102%;
+  background-color: #9bb7c7ee;
+  /* color: #242124; */
+  color: rgb(30, 29, 29);
+  width: 100%;
   top: 0;
-  margin-left: -1em;
+  right: 0;
+  /* margin-left: -1em; */
   z-index: 2;
   backdrop-filter: blur(15px);
   /*glassmorphism effect */
-  padding: 1% 15%;
+  padding: 0.3% 15%;
   box-shadow: 0 2px 10px rgba(144, 204, 221, 0.644);
 }
-header::after {
+
+/* header::after {
   content: "";
-  position: absolute;
-  top: 0;
+  position: absolute; 
+  top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-}
+   z-index: -1;
+} */
+
+/* space at both end */
 main {
   margin: 0 3em;
-  /* padding-top: 11%; */
-  /* Adjust based on header height */
 }
 
-/* header nav  */
+/*  anchor tag*/
 a {
   text-decoration: none;
-  color: #242124;
+}
+/* list in header */
+li a {
+  color: rgb(30, 29, 29);
   font-size: 1.1rem;
 }
 li a:hover {
   text-decoration: underline;
 }
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5em;
+}
 
+/* nav in header */
 nav {
   display: flex;
   justify-content: space-between;
@@ -57,14 +70,6 @@ nav {
   margin-left: -2.5em;
   font-size: 1.6rem;
 }
-.list {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  /* column-gap: 2em; */
-  justify-content: space-around;
-  gap: 2.5em;
-}
 
 /* ------------------------ */
 body {
@@ -72,29 +77,20 @@ body {
     fixed;
   background-size: cover;
   height: 100vh;
-  color: #f8f8ff;
-  /* color: hsl(0, 0%, 100%); */
+  color: #ededed;
   font-family: "Unna", serif;
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 
-/* Profile -Abt me*/
-/* img{
-  border-radius: 5%;
-  width: 100px;
-  height: 100px; 
-  border-bottom: 5px grey solid;
-  object-position: center;
-  object-fit:contain;
-} */
-
-/* About me */
+/* Home */
 #home {
   margin-top: 8em;
 }
-#home p {
+.abt {
   font-size: 1.3rem;
+  background-color: rgba(0, 255, 255, 0.066);
+  padding: 3%;
 }
 #changing-word {
   font-size: 1.8rem;
@@ -143,7 +139,7 @@ body {
 
 /* Education */
 .education {
-  width: 25%;
+  width: 28%;
   row-gap: 1em;
   margin: 0 auto;
   text-align: center;
@@ -206,7 +202,7 @@ body {
   font-weight: bold;
 }
 .project:hover {
-  background-color: white;
+  background-color: rgba(165, 218, 242, 0.82);
   /* background:linear-gradient(to right, #f2712168, rgba(1, 1, 72, 0.459)); */
   /* box-shadow: 3px 12px 5px 5px rgba(1, 21, 58, 0.975); */
   border: none;
@@ -327,6 +323,7 @@ hr {
     width: 20em;
     margin: 3em auto;
   }
+
   /* Project display in grid */
   .prj {
     display: grid;
@@ -356,21 +353,26 @@ hr {
     font-size: 1.2rem;
   }
   li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .list {
-    gap: 1em;
+    gap: 1.1em;
   }
   nav {
-    gap: 3em;
+    gap: 2.9em;
+  }
+  header {
+    padding: 1% 13%;
   }
 
   /* home */
-  #home .abt{
-    font-size: 1rem;
+  .abt {
+    font-size: 1.2rem;
   }
+
   /* Education */
-  .education{
-    width: 80%;
+  .education {
+    width: 85%;
   }
+
 }
