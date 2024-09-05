@@ -10,7 +10,6 @@ html {
 header {
   position: fixed;
   background-color: #9bb7c7ee;
-  /* color: #242124; */
   color: rgb(30, 29, 29);
   width: 100%;
   top: 0;
@@ -192,14 +191,36 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
 }
+.project:hover .prj-head {
+  color: #171515e7; 
+  text-shadow: 2px 2px 4px rgba(1, 28, 35, 0.735), 
+               4px 4px 8px rgba(140, 223, 223, 0.568); 
+}
 .project:hover {
   background-color: rgba(165, 218, 242, 0.82);
-  /* background:linear-gradient(to right, #f2712168, rgba(1, 1, 72, 0.459)); */
-  /* box-shadow: 3px 12px 5px 5px rgba(1, 21, 58, 0.975); */
   border: none;
   border-radius: 5px;
   color: black;
 }
+  /* background:linear-gradient(to right, #f2712168, rgba(1, 1, 72, 0.459)); */
+  /* box-shadow: 3px 12px 5px 5px rgba(1, 21, 58, 0.975); */
+
+.prj-head{
+  font-size: 1.6em; 
+  font-weight: bold;
+  color: #d1d1d1; 
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.872),
+   /* Shadow for depth */
+               4px 4px 8px rgba(0, 0, 0, 0.774);
+                /* Additional shadow for a layered effect */
+  letter-spacing: 1.1px; 
+  display: block;
+  font-family: "Yatra One", system-ui;
+  font-weight: 400;
+
+}
+
 
 /* View project */
 .link {

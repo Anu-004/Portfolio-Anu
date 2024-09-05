@@ -52,7 +52,7 @@ const sendEmail = (e) => {
 contactForm.addEventListener("submit", sendEmail);
 
 // JavaScript to handle word change
-let words = ["Web Developer", "Fresher"];
+let words = ["Web Developer", "Frontend Enthusiast"];
 let currentIndex = 0;
 
 function changeWord() {
